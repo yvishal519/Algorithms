@@ -19,5 +19,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](algoexpert.io/python/Balanced_Bracket.py) code.
+Check this [Python](../python/Balanced_Bracket.py) code.
 
