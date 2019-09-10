@@ -1,14 +1,15 @@
-## Single Cycle Check
+## Min Number Of Jumps
 
 #### Problem Statement
 
-You are given an array of integers. Each integer represents a jump of its value in the array. For instance, the integer 2 represents a jump of 2 indices forward in the array; the integer -3 represents a jump of 3 indices backward in the array. If a jump spills past the array's bounds, it wraps over to the other side. For instance, a
-jump of -1 at index 0 brings us to the last index in the array. Similarly, a jump of 1 at the last index in the array brings us to index 0. Write a function that returns a
-boolean representing whether the jumps in the array form a single cycle. A single cycle occurs if, starting at any index in the array and following the jumps, every
-element is visited exactly once before landing back on the starting index.
+Min Number Of Jumps
+You are given a non-empty array of integers. Each element represents the maximum number of steps you can take forward. For example, if the element at index 1
+is 3, you can go from index 1 to index 2, 3, or 4. Write a function that returns the minimum number of jumps needed to reach the nal index. Note that jumping
+from index i to index i + x always constitutes 1 jump, no matter how large x is.
 
-`Sample input: [2, 3, 1, -4, -4, 2]
-Sample output: True`
+
+`Sample input: [3, 4, 2, 1, 2, 3, 7, 1, 1, 1, 3]
+Sample output: 4 (3 --> 4 or 2 --> 2 or 3 --> 7 --> 3)`
 
 
 #### Explanation
@@ -17,5 +18,5 @@ Sample output: True`
 
 #### Solution
 
-Check this [Python](../python/Single_Cycle_Check.py) code.
+Check this [Python](../python/Min_Number_Of_Jumps.py) code.
 
