@@ -1,16 +1,17 @@
-## Quick Sort
+## Four Number Sum
 
 #### Problem Statement
 
-Quick Sort
-Write a function that takes in an array of integers and returns a sorted version of that array. Use the Quick Sort algorithm to sort the array.
+Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum. The function should nd all quadruplets in the array
+that sum up to the target sum and return a two-dimensional array of all these quadruplets in no particular order. If no four numbers sum up to the target sum, the
+function should return an empty array.
 
 
-`Sample input: [8, 5, 2, 9, 5, 6, 3]
-Sample output: [2, 3, 5, 5, 6, 8, 9]`
+`Sample input: [7, 6, 4, -1, 1, 2], 16
+Sample output: [[7, 6, 4, -1], [7, 6, 1, 2]]`
 
 
 #### Solution
 
-Check this [Python](../python/Quick_Sort.py) code.
+Check this [Python](../python/Four_Number_Sum.py) code.
 
