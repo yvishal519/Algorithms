@@ -1,14 +1,19 @@
-## Single Cycle Check
+## Knapsack Problem
 
 #### Problem Statement
 
-You are given an array of integers. Each integer represents a jump of its value in the array. For instance, the integer 2 represents a jump of 2 indices forward in the array; the integer -3 represents a jump of 3 indices backward in the array. If a jump spills past the array's bounds, it wraps over to the other side. For instance, a
-jump of -1 at index 0 brings us to the last index in the array. Similarly, a jump of 1 at the last index in the array brings us to index 0. Write a function that returns a
-boolean representing whether the jumps in the array form a single cycle. A single cycle occurs if, starting at any index in the array and following the jumps, every
-element is visited exactly once before landing back on the starting index.
+You are given an array of arrays. Each subarray in this array holds two integer values and
+represents an item; the rst integer is the item's value, and the second integer is the item's
+weight. You are also given an integer representing the maximum capacity of a knapsack
+that you have. Your goal is to t items in your knapsack, all the while maximizing their
+combined value. Note that the sum of the weights of the items that you pick cannot
+exceed the knapsack's capacity. Write a function that returns the maximized combined
+value of the items that you should pick, as well as an array of the indices of each item
+picked. Assume that there will only be one combination of items that maximizes the total
+value in the knapsack.
 
-`Sample input: [2, 3, 1, -4, -4, 2]
-Sample output: True`
+`Sample input: [[1, 2], [4, 3], [5, 6], [6, 7]], 10
+Sample output: [10, [1, 3]]`
 
 
 #### Explanation
@@ -17,5 +22,5 @@ Sample output: True`
 
 #### Solution
 
-Check this [Python](../python/Single_Cycle_Check.py) code.
+Check this [Python](../python/Knapsack_Problem.py) code.
 
