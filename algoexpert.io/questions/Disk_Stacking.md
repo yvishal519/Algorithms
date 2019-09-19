@@ -11,9 +11,10 @@ disk and ending with the bottom disk. Note that you cannot rotate disks; in othe
 subarray must represent [width, depth, height] at all times. Assume that there will only be one stack with the
 greatest total height.
 
-`Sample input: [[2, 1, 2], [3, 2, 3], [2, 2, 8], [2, 3, 4], [1, 3, 1], [4, 4, 5]] 
-&nbsp;
-Sample output: [[2, 1, 2], [3, 2, 3], [4, 4, 5]]`
+`
+Sample input: [[2, 1, 2], [3, 2, 3], [2, 2, 8], [2, 3, 4], [1, 3, 1], [4, 4, 5]]
+Sample output: [[2, 1, 2], [3, 2, 3], [4, 4, 5]]
+`
 
 
 #### Explanation

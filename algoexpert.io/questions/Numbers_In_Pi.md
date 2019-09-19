@@ -8,11 +8,13 @@ integers in string format), write a function that returns the smallest number of
 to the n digits of Pi such that all resulting numbers are found in the list of favorite numbers.
 
 
-`Sample input:
+`
+Sample input:
 "3141592653589793238462643383279",
 ["314159265358979323846","26433","8","3279","314159265","35897932384626433832","79"]
-</br>
-Sample output: 2 ("314159265 | 35897932384626433832 | 79")`
+<br>
+Sample output: 2 ("314159265 | 35897932384626433832 | 79")
+`
 
 
 #### Explanation
