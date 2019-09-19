@@ -1,14 +1,19 @@
-## Single Cycle Check
+## Disk Stacking
 
 #### Problem Statement
 
-You are given an array of integers. Each integer represents a jump of its value in the array. For instance, the integer 2 represents a jump of 2 indices forward in the array; the integer -3 represents a jump of 3 indices backward in the array. If a jump spills past the array's bounds, it wraps over to the other side. For instance, a
-jump of -1 at index 0 brings us to the last index in the array. Similarly, a jump of 1 at the last index in the array brings us to index 0. Write a function that returns a
-boolean representing whether the jumps in the array form a single cycle. A single cycle occurs if, starting at any index in the array and following the jumps, every
-element is visited exactly once before landing back on the starting index.
 
-`Sample input: [2, 3, 1, -4, -4, 2]
-Sample output: True`
+You are given a non-empty array of arrays. Each subarray holds three integers and represents a disk. These
+integers denote each disk's width, depth, and height, respectively. Your goal is to stack up the disks and to
+maximize the total height of the stack. A disk must have a strictly smaller width, depth, and height than any
+other disk below it. Write a function that returns an array of the disks in the nal stack, starting with the top
+disk and ending with the bottom disk. Note that you cannot rotate disks; in other words, the integers in each
+subarray must represent [width, depth, height] at all times. Assume that there will only be one stack with the
+greatest total height.
+
+`Sample input: [[2, 1, 2], [3, 2, 3], [2, 2, 8], [2, 3, 4], [1, 3, 1], [4, 4, 5]] 
+<br/>
+Sample output: [[2, 1, 2], [3, 2, 3], [4, 4, 5]]`
 
 
 #### Explanation
@@ -17,5 +22,5 @@ Sample output: True`
 
 #### Solution
 
-Check this [Python](../python/Single_Cycle_Check.py) code.
+Check this [Python](../python/Disk_Stacking.py) code.
 
