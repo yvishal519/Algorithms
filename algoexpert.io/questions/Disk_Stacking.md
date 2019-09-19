@@ -12,7 +12,7 @@ subarray must represent [width, depth, height] at all times. Assume that there w
 greatest total height.
 
 `Sample input: [[2, 1, 2], [3, 2, 3], [2, 2, 8], [2, 3, 4], [1, 3, 1], [4, 4, 5]] 
-<br/>
+<br />
 Sample output: [[2, 1, 2], [3, 2, 3], [4, 4, 5]]`
 
 
