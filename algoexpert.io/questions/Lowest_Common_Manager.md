@@ -23,6 +23,16 @@ H  I
 
 ![TREE R 1 N 2 F 3 F 4 F 5]!
 
+![TREE R "root" N "a node" L "a leaf" L "an other leaf" N "an other node" L "a leaf again !" N "a node again !" L  "OneWord" L "the last leaf"]!
+
+
+![nTREE "A" -- {"B" -- {"H" -- {"N", "O"}, "I", "J"}, "C", "D", "E" -- {"K" -- "P", "L" -- "Q"}, "F", "G" -- "M"}]!
+
+
+![TREE R 1 N 2 F 3 F 4 F 5]!
+
+![nTREE A -- {B -- {H -- {N, O}, I, J}, C, D, E -- {K -- P, L -- Q}, F, G -- M}]!
+
 
 `Sample output: Node B`
 
