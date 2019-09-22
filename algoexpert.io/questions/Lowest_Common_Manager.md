@@ -19,7 +19,7 @@ Sample input: Node A, Node E, Node I (from the organizational chart below)
 H  I
 `
 
-![TREE R "A" N "B" F "D" L "H" L "I" L "E" N "C" L "F" L  "G" ]!
+![TREE R 'A' N 'B' F 'D' L 'H' L 'I' L 'E' N 'C' L 'F' L 'G' ]!
 
 `Sample output: Node B`
 
