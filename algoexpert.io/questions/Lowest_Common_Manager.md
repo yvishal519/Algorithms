@@ -9,15 +9,17 @@ are reports in the organizational chart. Write a function that returns the lowes
 
 
 Sample input: Node A, Node E, Node I (from the organizational chart below)
+`   
     A
    / \
   B   C
  / \ / \
  D E F G
 / \
-H I
+H  I
+`
 
-Sample output: Node B
+`Sample output: Node B`
 
 
 
