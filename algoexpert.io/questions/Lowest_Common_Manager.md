@@ -1,14 +1,24 @@
-## Single Cycle Check
+## Lowest Common Manager
 
 #### Problem Statement
 
-You are given an array of integers. Each integer represents a jump of its value in the array. For instance, the integer 2 represents a jump of 2 indices forward in the array; the integer -3 represents a jump of 3 indices backward in the array. If a jump spills past the array's bounds, it wraps over to the other side. For instance, a
-jump of -1 at index 0 brings us to the last index in the array. Similarly, a jump of 1 at the last index in the array brings us to index 0. Write a function that returns a
-boolean representing whether the jumps in the array form a single cycle. A single cycle occurs if, starting at any index in the array and following the jumps, every
-element is visited exactly once before landing back on the starting index.
 
-`Sample input: [2, 3, 1, -4, -4, 2]
-Sample output: True`
+You're given three inputs, all of which are instances of a class that have a "directReports" property pointing to their direct reports. The rst
+input is the top manager in an organizational chart (i.e., the only instance that is not anybody else's direct report), and the other two inputs
+are reports in the organizational chart. Write a function that returns the lowest common manager to the two reports.
+
+
+Sample input: Node A, Node E, Node I (from the organizational chart below)
+    A
+   / \
+  B   C
+ / \ / \
+ D E F G
+/ \
+H I
+
+Sample output: Node B
+
 
 
 #### Explanation
@@ -17,5 +27,5 @@ Sample output: True`
 
 #### Solution
 
-Check this [Python](../python/Single_Cycle_Check.py) code.
+Check this [Python](../python/Lowest_Common_Manager.py) code.
 
