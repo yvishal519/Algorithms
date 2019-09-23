@@ -1,15 +1,15 @@
-## Single Cycle Check
+## Shifted Binary Search
 
 #### Problem Statement
 
-You are given an array of integers. Each integer represents a jump of its value in the array. For instance, the integer 2 represents a jump of 2 indices forward in the array; the integer -3 represents a jump of 3 indices backward in the array. If a jump spills past the array's bounds, it wraps over to the other side. For instance, a
-jump of -1 at index 0 brings us to the last index in the array. Similarly, a jump of 1 at the last index in the array brings us to index 0. Write a function that returns a
-boolean representing whether the jumps in the array form a single cycle. A single cycle occurs if, starting at any index in the array and following the jumps, every
-element is visited exactly once before landing back on the starting index.
 
-`Sample input: [2, 3, 1, -4, -4, 2]
-Sample output: True`
+Write a function that takes in a sorted array of integers as well as a target integer. The caveat is that the numbers in the array have
+been shifted by some amount; in other words, they have been moved to the left or the right by one or more positions. For example,
+[1, 2, 3, 4] might become [3, 4, 1, 2]. The function should use a variation of the Binary Search algorithm to nd if the target number
+is contained in the array and should return its index if it is, otherwise -1.
 
+Sample input: [45, 61, 71, 72, 73, 0, 1, 21, 33, 45], 33
+Sample output: 8
 
 #### Explanation
 
@@ -17,5 +17,5 @@ Sample output: True`
 
 #### Solution
 
-Check this [Python](../python/Single_Cycle_Check.py) code.
+Check this [Python](../python/Shifted_Binary_Search.py) code.
 
