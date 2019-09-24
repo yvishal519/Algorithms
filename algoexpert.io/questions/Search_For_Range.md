@@ -1,14 +1,16 @@
-## Single Cycle Check
+## Search For Range
 
 #### Problem Statement
 
-You are given an array of integers. Each integer represents a jump of its value in the array. For instance, the integer 2 represents a jump of 2 indices forward in the array; the integer -3 represents a jump of 3 indices backward in the array. If a jump spills past the array's bounds, it wraps over to the other side. For instance, a
-jump of -1 at index 0 brings us to the last index in the array. Similarly, a jump of 1 at the last index in the array brings us to index 0. Write a function that returns a
-boolean representing whether the jumps in the array form a single cycle. A single cycle occurs if, starting at any index in the array and following the jumps, every
-element is visited exactly once before landing back on the starting index.
+Search For Range
+Write a function that takes in a sorted array of integers as well as a target integer. The function should use a variation of the Binary
+Search algorithm to nd a range of indices in between which the target number is contained in the array and should return this range in
+the form of an array. The rst number in the output array should represent the rst index at which the target number is located while the
+second number should represent the last index at which the target number is located. The function should return [-1, -1] if the number is
+not contained in the array.
 
-`Sample input: [2, 3, 1, -4, -4, 2]
-Sample output: True`
+Sample input: [0, 1, 21, 33, 45, 45, 45, 45, 45, 45, 61, 71, 73], 45
+Sample output: [4, 9]
 
 
 #### Explanation
@@ -17,5 +19,5 @@ Sample output: True`
 
 #### Solution
 
-Check this [Python](../python/Single_Cycle_Check.py) code.
+Check this [Python](../python/Search_For_Range.py) code.
 
