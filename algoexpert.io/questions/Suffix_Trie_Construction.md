@@ -1,16 +1,28 @@
-## Quick Sort
+## Suffix Trie Construction
 
 #### Problem Statement
 
-Quick Sort
-Write a function that takes in an array of integers and returns a sorted version of that array. Use the Quick Sort algorithm to sort the array.
 
+Write a class for a sufx-trie-like data structure. The class should have a "root" property set to be the root node of the trie. The class should support creation from
+a string and the searching of strings. The creation method (called populateSufxTrieFrom()) will be called when the class is instantiated and should populate the
+"root" property of the class. Note that every string added to the trie should end with the special"endSymbol" character:"*".
 
-`Sample input: [8, 5, 2, 9, 5, 6, 3]
-Sample output: [2, 3, 5, 5, 6, 8, 9]`
+Sample input (for creation):"babc"
+
+Sample output (for creation):
+{
+"c": {"*": True},
+"b": {
+"c": {"*": True},
+"a": {"b": {"c": {"*": True}}},
+},
+"a": {"b": {"c": {"*": True}}},
+}
+Sample input (for searching in the sufx trie above):"abc"
+Sample output (for searching in the sufx trie above): True
 
 
 #### Solution
 
-Check this [Python](../python/Quick_Sort.py) code.
+Check this [Python](../python/Suffix_Trie_Construction.py) code.
 

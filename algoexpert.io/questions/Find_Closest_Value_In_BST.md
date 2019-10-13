@@ -1,14 +1,22 @@
-## Balanced Bracket
+## Find Closest Value In BST
 
 #### Problem Statement
 
-Write a function that takes in a string made up of brackets `("(","[","{",")","]", and "}")` and other optional characters. The function should return a boolean
-representing whether or not the string is balanced in regards to brackets. A string is said to be balanced if it has as many opening brackets of a given type as it has
-closing brackets of that type and if no bracket is unmatched. Note that a closing bracket cannot match a corresponding opening bracket that comes after it.
-Similarly, brackets cannot overlap each other as in `"[(])"`.
 
-`Sample input:"([])(){}(())()()"
-Sample output: True (it is balanced)`
+You are given a BST data structure consisting of BST nodes. Each BST node has an integer value stored in a property called "value" and two children nodes stored
+in properties called "left" and "right," respectively. A node is said to be a BST node if and only if it satises the BST property: its value is strictly greater than the
+values of every node to its left; its value is less than or equal to the values of every node to its right; and both of its children nodes are either BST nodes
+themselves or None (null) values. You are also given a target integer value; write a function that nds the closest value to that target value contained in the BST.
+Assume that there will only be one closest value.
+Sample input:
+        10 , 12
+       /  \
+      5   15
+     / \   / \
+    2   5 13 22
+   /        \
+  1         14
+Sample output: 13
 
 
 
@@ -19,5 +27,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/Balanced_Bracket.py) code.
+Check this [Python](../python/Find_Closest_Value_in_BST.py) code.
 

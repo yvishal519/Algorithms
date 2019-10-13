@@ -1,13 +1,17 @@
-## Two Number Sum
+## Pattern Matcher
 
 #### Problem Statement
 
-Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum. If any two numbers in the input array sum up to the
-target sum, the function should return them in an array, in sorted order. If no two numbers sum up to the target sum, the function should return an empty array.
-Assume that there will be at most one pair of numbers summing up to the target sum.
 
-`Sample input: [3, 5, -4, 8, 11, 1, -1, 6], 10
-Sample output: [-1, 11]`
+You are given two non-empty strings. The rst one is a pattern consisting of only "x"s and / or "y"s; the other one is a normal string of alphanumeric characters. Write a function that checks whether or not the normal string matches the pattern. A string S0 is said to match a pattern if replacing all"x"s in the pattern with
+some string S1 and replacing all"y"s in the pattern with some string S2 yields the same string S0. If the input string does not match the input pattern, return an
+empty array; otherwise, return an array holding the representations of"x" and "y"in the normal string, in that order. If the pattern does not contain any "x"s or
+"y"s, the respective letter should be represented by an empty string in the nal array that you return. Assume that there will never be more than one pair of
+strings S1 and S2 that appropriately represent"x" and "y"in the input string.
+
+Sample input:"xxyxxy","gogopowerrangergogopowerranger"
+
+Sample output: ["go","powerranger"]
 
 
 
@@ -18,5 +22,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/Two_Number_Sum.py) code.
+Check this [Python](../python/Pattern_Matcher.py) code.
 

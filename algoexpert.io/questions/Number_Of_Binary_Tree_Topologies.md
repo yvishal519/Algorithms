@@ -1,13 +1,16 @@
-## Two Number Sum
+## Number Of Possible Binary Tree Topologies
 
 #### Problem Statement
 
-Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum. If any two numbers in the input array sum up to the
-target sum, the function should return them in an array, in sorted order. If no two numbers sum up to the target sum, the function should return an empty array.
-Assume that there will be at most one pair of numbers summing up to the target sum.
 
-`Sample input: [3, 5, -4, 8, 11, 1, -1, 6], 10
-Sample output: [-1, 11]`
+Write a function that takes in a non-negative integer n and that returns the number of possible Binary Tree topologies that can be created with exactly n nodes. A
+Binary Tree topology is dened as any Binary Tree conguration, irrespective of node values. For instance, there exist only two Binary Tree topologies when n is
+equal to 2: a root node with a left node, and a root node with a right node. Node that when n is equal to 0, there is one topology that can be created: the None
+(null) node.
+
+Sample input: 3
+
+Sample output: 5
 
 
 
@@ -18,5 +21,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/Two_Number_Sum.py) code.
+Check this [Python](../python/Number_Of_Possible_Binary_Tree_Topologies.py) code.
 

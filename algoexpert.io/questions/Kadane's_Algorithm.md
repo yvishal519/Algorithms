@@ -1,33 +1,12 @@
-## BST Construction
+## Kadane's Algorithm
 
 #### Problem Statement
 
-Write a Binary Search Tree (BST)	class. The class should have a "value" property set to be an integer, as well as "left" and "right" properties, both of which should
-point to either the None (null)	value or to another BST. A node is said to be a BST node if and only if it satises the BST property: its value is strictly greater than
-the values of every node to its left; its value is less than or equal to the values of every node to its right; and both of its children nodes are either BST nodes
-themselves or None (null)	values. The BST class should support insertion, searching, and removal of values. The removal method should only remove the rst
-instance of the target value.
 
-Sample input:
-           10
-          /  \
-         5   15
-        / \	 / \
-       2   5 13 22
-      /        \
-     1          14
-Sample output (after inserting 12):
-           10
-          /  \
-         5    15
-        / \	  / \
-       2   5 13  22
-      /     /  \
-     1     12  14
-Sample output (after removing 10):
-      12
-     / \
-    5  15
+Write a function that takes in a non-empty array of integers and returns the maximum sum that can be obtained by summing up all the numbers in a non-empty
+subarray of the input array. A subarray must only contain adjacent numbers.
+Sample input: [3, 5, -9, 1, 3, -2, 3, 4, 7, 2, -9, 6, 3, 1, -5, 4]
+Sample output: 19 ([1, 3, -2, 3, 4, 7, 2, -9, 6, 3, 1])
 
 
 
@@ -38,5 +17,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/BST_Construction_Iterative.py) code.
+Check this [Python](../python/Kadane's_Algorithm.py) code.
 

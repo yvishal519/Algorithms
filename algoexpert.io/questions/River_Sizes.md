@@ -1,33 +1,23 @@
-## BST Construction
+## River Sizes
 
 #### Problem Statement
 
-Write a Binary Search Tree (BST)	class. The class should have a "value" property set to be an integer, as well as "left" and "right" properties, both of which should
-point to either the None (null)	value or to another BST. A node is said to be a BST node if and only if it satises the BST property: its value is strictly greater than
-the values of every node to its left; its value is less than or equal to the values of every node to its right; and both of its children nodes are either BST nodes
-themselves or None (null)	values. The BST class should support insertion, searching, and removal of values. The removal method should only remove the rst
-instance of the target value.
+
+You are given a two-dimensional array (matrix) of potentially unequal height and width containing only 0s and 1s. Each 0 represents land, and each 1 represents
+part of a river. A river consists of any number of 1s that are either horizontally or vertically adjacent (but not diagonally adjacent). The number of adjacent 1s
+forming a river determine its size. Write a function that returns an array of the sizes of all rivers represented in the input matrix. Note that these sizes do not need
+to be in any particular order.
 
 Sample input:
-           10
-          /  \
-         5   15
-        / \	 / \
-       2   5 13 22
-      /        \
-     1          14
-Sample output (after inserting 12):
-           10
-          /  \
-         5    15
-        / \	  / \
-       2   5 13  22
-      /     /  \
-     1     12  14
-Sample output (after removing 10):
-      12
-     / \
-    5  15
+[
+[1, 0, 0, 1, 0],
+[1, 0, 1, 0, 0],
+[0, 0, 1, 0, 1],
+[1, 0, 1, 0, 1],
+[1, 0, 1, 1, 0],
+]
+
+Sample output: [1, 2, 2, 2, 5]
 
 
 
@@ -38,5 +28,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/BST_Construction_Iterative.py) code.
+Check this [Python](../python/River_Sizes.py) code.
 

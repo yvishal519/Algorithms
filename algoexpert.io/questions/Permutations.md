@@ -1,16 +1,17 @@
-## Quick Sort
+## Permutations
 
 #### Problem Statement
 
-Quick Sort
-Write a function that takes in an array of integers and returns a sorted version of that array. Use the Quick Sort algorithm to sort the array.
 
+Write a function that takes in an array of unique integers and returns an array of all permutations of those integers. If the input array is empty, your function
+should return an empty array.
 
-`Sample input: [8, 5, 2, 9, 5, 6, 3]
-Sample output: [2, 3, 5, 5, 6, 8, 9]`
+Sample input: [1, 2, 3]
+
+Sample output: [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]
 
 
 #### Solution
 
-Check this [Python](../python/Quick_Sort.py) code.
+Check this [Python](../python/Permutations.py) code.
 

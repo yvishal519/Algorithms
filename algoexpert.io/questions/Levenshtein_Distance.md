@@ -1,33 +1,13 @@
-## BST Construction
+## Levenshtein Distance
 
 #### Problem Statement
 
-Write a Binary Search Tree (BST)	class. The class should have a "value" property set to be an integer, as well as "left" and "right" properties, both of which should
-point to either the None (null)	value or to another BST. A node is said to be a BST node if and only if it satises the BST property: its value is strictly greater than
-the values of every node to its left; its value is less than or equal to the values of every node to its right; and both of its children nodes are either BST nodes
-themselves or None (null)	values. The BST class should support insertion, searching, and removal of values. The removal method should only remove the rst
-instance of the target value.
 
-Sample input:
-           10
-          /  \
-         5   15
-        / \	 / \
-       2   5 13 22
-      /        \
-     1          14
-Sample output (after inserting 12):
-           10
-          /  \
-         5    15
-        / \	  / \
-       2   5 13  22
-      /     /  \
-     1     12  14
-Sample output (after removing 10):
-      12
-     / \
-    5  15
+Write a function that takes in two strings and returns the minimum number of edit operations that need to be performed on the rst string to obtain the second
+string. There are three edit operations: insertion of a character, deletion of a character, and substitution of a character for another.
+
+Sample input:"abc","yabd"
+Sample output: 2 (insert"y"; substitute "c"for "d")
 
 
 
@@ -38,5 +18,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/BST_Construction_Iterative.py) code.
+Check this [Python](../python/Levenshtein_Distance.py) code.
 

@@ -1,13 +1,16 @@
-## Two Number Sum
+## Max Profit With K Transactions
 
 #### Problem Statement
 
-Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum. If any two numbers in the input array sum up to the
-target sum, the function should return them in an array, in sorted order. If no two numbers sum up to the target sum, the function should return an empty array.
-Assume that there will be at most one pair of numbers summing up to the target sum.
 
-`Sample input: [3, 5, -4, 8, 11, 1, -1, 6], 10
-Sample output: [-1, 11]`
+You are given an array of integers representing the prices of a single stock on various days (each index in the array represents a different day). You are also given
+an integer k, which represents the number of transactions you are allowed to make. One transaction consists of buying the stock on a given day and selling it on
+another, later day. Write a function that returns the maximum prot that you can make buying and selling the stock, given k transactions. Note that you can only
+hold 1 share of the stock at a time; in other words, you cannot buy more than 1 share of the stock on any given day, and you cannot buy a share of the stock if you
+are still holding another share.
+
+Sample input: [5, 11, 3, 50, 60, 90], 2
+Sample output: 93 (Buy: 5, Sell: 11; Buy: 3, Sell: 90)
 
 
 
@@ -18,5 +21,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/Two_Number_Sum.py) code.
+Check this [Python](../python/Max_Profit_With_K_Transactions.py) code.
 

@@ -1,14 +1,16 @@
-## Balanced Bracket
+## Three Number Sum
 
 #### Problem Statement
 
-Write a function that takes in a string made up of brackets `("(","[","{",")","]", and "}")` and other optional characters. The function should return a boolean
-representing whether or not the string is balanced in regards to brackets. A string is said to be balanced if it has as many opening brackets of a given type as it has
-closing brackets of that type and if no bracket is unmatched. Note that a closing bracket cannot match a corresponding opening bracket that comes after it.
-Similarly, brackets cannot overlap each other as in `"[(])"`.
 
-`Sample input:"([])(){}(())()()"
-Sample output: True (it is balanced)`
+Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum. The function should nd all triplets in the array that
+sum up to the target sum and return a two-dimensional array of all these triplets. The numbers in each triplet should be ordered in ascending order, and the
+triplets themselves should be ordered in ascending order with respect to the numbers they hold. If no three numbers sum up to the target sum, the function
+should return an empty array.
+
+Sample input: [12, 3, 1, 2, -6, 5, -8, 6], 0
+
+Sample output: [[-8, 2, 6], [-8, 3, 5], [-6, 1, 5]]
 
 
 
@@ -19,5 +21,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/Balanced_Bracket.py) code.
+Check this [Python](../python/Three_Number_Sum.py) code.
 

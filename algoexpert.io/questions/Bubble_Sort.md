@@ -1,14 +1,12 @@
-## Balanced Bracket
+## Bubble Sort
 
 #### Problem Statement
 
-Write a function that takes in a string made up of brackets `("(","[","{",")","]", and "}")` and other optional characters. The function should return a boolean
-representing whether or not the string is balanced in regards to brackets. A string is said to be balanced if it has as many opening brackets of a given type as it has
-closing brackets of that type and if no bracket is unmatched. Note that a closing bracket cannot match a corresponding opening bracket that comes after it.
-Similarly, brackets cannot overlap each other as in `"[(])"`.
 
-`Sample input:"([])(){}(())()()"
-Sample output: True (it is balanced)`
+Write a function that takes in an array of integers and returns a sorted version of that array. Use the Bubble Sort algorithm to sort the array.
+
+Sample input: [8, 5, 2, 9, 5, 6, 3]
+Sample output: [2, 3, 5, 5, 6, 8, 9]
 
 
 
@@ -19,5 +17,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/Balanced_Bracket.py) code.
+Check this [Python](../python/Bubble_Sort.py) code.
 

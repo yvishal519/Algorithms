@@ -1,13 +1,14 @@
-## Two Number Sum
+## Longest Increasing Subsequence
 
 #### Problem Statement
 
-Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum. If any two numbers in the input array sum up to the
-target sum, the function should return them in an array, in sorted order. If no two numbers sum up to the target sum, the function should return an empty array.
-Assume that there will be at most one pair of numbers summing up to the target sum.
 
-`Sample input: [3, 5, -4, 8, 11, 1, -1, 6], 10
-Sample output: [-1, 11]`
+Given a non-empty array of integers, write a function that returns the longest strictly-increasing subsequence of the array. A subsequence is dened as a set of
+numbers that are not necessarily adjacent but that are in the same order as they appear in the array. Assume that there will only be one longest increasing
+subsequence.
+
+Sample input: [5, 7, -24, 12, 10, 2, 3, 12, 5, 6, 35]
+Sample output: [-24, 2, 3, 5, 6, 35]
 
 
 
@@ -18,5 +19,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/Two_Number_Sum.py) code.
+Check this [Python](../python/Longest_Increasing_Subsequence.py) code.
 

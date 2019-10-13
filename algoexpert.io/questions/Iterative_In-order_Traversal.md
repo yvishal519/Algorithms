@@ -1,13 +1,30 @@
-## Two Number Sum
+## Iterative In-order Traversal
 
 #### Problem Statement
 
-Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum. If any two numbers in the input array sum up to the
-target sum, the function should return them in an array, in sorted order. If no two numbers sum up to the target sum, the function should return an empty array.
-Assume that there will be at most one pair of numbers summing up to the target sum.
 
-`Sample input: [3, 5, -4, 8, 11, 1, -1, 6], 10
-Sample output: [-1, 11]`
+Write a function that takes in a Binary Tree and traverses it using the in-order traversal technique but without using recursion. As the tree is being traversed, a
+callback function passed in as an argument to the main function should be called on each node (i.e. callback(currentNode)). Each Binary Tree node has a value
+stored in a property called "value," a parent node in a property called "parent," and two children nodes stored in properties called "left" and "right," respectively.
+Children nodes can either be Binary Tree nodes themselves or the None (null) value.
+
+Sample input:
+            1
+           / \
+          2   3
+         /   / \
+        4   6   7
+         \
+          9
+          
+Sample output:
+callback(4)
+callback(9)
+callback(2)
+callback(1)
+callback(6)
+callback(3)
+callback(7)
 
 
 
@@ -18,5 +35,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/Two_Number_Sum.py) code.
+Check this [Python](../python/Iterative_In-order_Traversal.py) code.
 

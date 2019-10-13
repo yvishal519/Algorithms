@@ -1,14 +1,14 @@
-## Balanced Bracket
+## Caesar Cipher Encryptor
 
 #### Problem Statement
 
-Write a function that takes in a string made up of brackets `("(","[","{",")","]", and "}")` and other optional characters. The function should return a boolean
-representing whether or not the string is balanced in regards to brackets. A string is said to be balanced if it has as many opening brackets of a given type as it has
-closing brackets of that type and if no bracket is unmatched. Note that a closing bracket cannot match a corresponding opening bracket that comes after it.
-Similarly, brackets cannot overlap each other as in `"[(])"`.
 
-`Sample input:"([])(){}(())()()"
-Sample output: True (it is balanced)`
+Given a non-empty string of lowercase letters and a non-negative integer value representing a key, write a function that returns a new string obtained by shifting
+every letter in the input string by k positions in the alphabet, where k is the key. Note that letters should "wrap" around the alphabet; in other words, the letter "z"
+shifted by 1 returns the letter "a".
+
+Sample input:"xyz", 2
+Sample output:"zab"
 
 
 
@@ -19,5 +19,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/Balanced_Bracket.py) code.
+Check this [Python](../python/Caesar_Cipher_Encryptor.py) code.
 

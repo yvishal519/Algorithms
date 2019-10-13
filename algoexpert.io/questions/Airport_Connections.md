@@ -1,14 +1,57 @@
-## Two Number Sum
+## Airport Connections
 
 #### Problem Statement
 
-Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum. If any two numbers in the input array sum up to the
-target sum, the function should return them in an array, in sorted order. If no two numbers sum up to the target sum, the function should return an empty array.
-Assume that there will be at most one pair of numbers summing up to the target sum.
+You are given a list of airports (three-letter codes like 'JFK'), a list of routes (one-way ights from one airport to another like ['JFK', 'SFO']), and
+a starting airport. Write a function that returns the minimum number of airport connections (one-way ights) that need to be added in order
+for someone to be able to reach any airport in the list, starting at the starting airport. Note that the connections don't have to be direct; it's
+okay if an airport can only be reached from the starting airport by stopping at other airports rst.
 
-`Sample input: [3, 5, -4, 8, 11, 1, -1, 6], 10
-Sample output: [-1, 11]`
+Sample input:
+[
+"BGI",
+"CDG",
+"DEL",
+"DOH",
+"DSM",
+"EWR",
+"EYW",
+"HND",
+"ICN",
+"JFK",
+"LGA",
+"LHR",
+"ORD",
+"SAN",
+"SFO",
+"SIN",
+"TLV",
+"BUD",
+],
+[
+["DSM","ORD"],
+["ORD","BGI"],
+["BGI","LGA"],
+["SIN","CDG"],
+["CDG","SIN"],
+["CDG","BUD"],
+["DEL","DOH"],
+["DEL","CDG"],
+["TLV","DEL"],
+["EWR","HND"],
+["HND","ICN"],
+["HND","JFK"]
+["ICN","JFK"],
+["JFK","LGA"],
+["EYW","LHR"],
+["LHR","SFO"],
+["SFO","SAN"],
+["SFO","DSM"],
+["SAN","EYW"],
+],
+"LGA"
 
+Sample output: 3
 
 
 #### Explanation
@@ -18,5 +61,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/Two_Number_Sum.py) code.
+Check this [Python](../python/Airport_Connections.py) code.
 

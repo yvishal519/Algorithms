@@ -1,13 +1,16 @@
-## Two Number Sum
+## Underscorify Substring
 
 #### Problem Statement
 
-Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum. If any two numbers in the input array sum up to the
-target sum, the function should return them in an array, in sorted order. If no two numbers sum up to the target sum, the function should return an empty array.
-Assume that there will be at most one pair of numbers summing up to the target sum.
 
-`Sample input: [3, 5, -4, 8, 11, 1, -1, 6], 10
-Sample output: [-1, 11]`
+Write a function that takes in two strings: a main string and a potential substring of the main string. The function should return a version of the main string with
+every instance of the substring in it wrapped between underscores. If two instances of the substring in the main string overlap each other or sit side by side, the
+underscores relevant to these two substrings should only appear on the far left of the left substring and on the far right of the right substring. If the main string
+does not contain the other string at all, return the main string intact.
+
+Sample input:"testthis is a testtest to see if testestest it works","test"
+
+Sample output:"_test_this is a _testtest_to see if_testestest_it works"
 
 
 
@@ -18,5 +21,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/Two_Number_Sum.py) code.
+Check this [Python](../python/Underscorify_Substring.py) code.
 

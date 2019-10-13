@@ -1,33 +1,15 @@
-## BST Construction
+## Number Of Ways To Make Change
 
 #### Problem Statement
 
-Write a Binary Search Tree (BST)	class. The class should have a "value" property set to be an integer, as well as "left" and "right" properties, both of which should
-point to either the None (null)	value or to another BST. A node is said to be a BST node if and only if it satises the BST property: its value is strictly greater than
-the values of every node to its left; its value is less than or equal to the values of every node to its right; and both of its children nodes are either BST nodes
-themselves or None (null)	values. The BST class should support insertion, searching, and removal of values. The removal method should only remove the rst
-instance of the target value.
 
-Sample input:
-           10
-          /  \
-         5   15
-        / \	 / \
-       2   5 13 22
-      /        \
-     1          14
-Sample output (after inserting 12):
-           10
-          /  \
-         5    15
-        / \	  / \
-       2   5 13  22
-      /     /  \
-     1     12  14
-Sample output (after removing 10):
-      12
-     / \
-    5  15
+Given an array of positive integers representing coin denominations and a single non-negative integer representing a target amount of money, implement a
+function that returns the number of ways to make change for that target amount using the given coin denominations. Note that an unlimited amount of coins is at
+your disposal.
+
+Sample input: 6, [1, 5]
+
+Sample output: 2 (1x1 + 1x5 and 6x1)
 
 
 
@@ -38,5 +20,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/BST_Construction_Iterative.py) code.
+Check this [Python](../python/Number_Of_Ways_To_Make_Change.py) code.
 

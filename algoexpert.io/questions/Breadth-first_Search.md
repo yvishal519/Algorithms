@@ -1,33 +1,21 @@
-## BST Construction
+## Breadth first Search
 
 #### Problem Statement
 
-Write a Binary Search Tree (BST)	class. The class should have a "value" property set to be an integer, as well as "left" and "right" properties, both of which should
-point to either the None (null)	value or to another BST. A node is said to be a BST node if and only if it satises the BST property: its value is strictly greater than
-the values of every node to its left; its value is less than or equal to the values of every node to its right; and both of its children nodes are either BST nodes
-themselves or None (null)	values. The BST class should support insertion, searching, and removal of values. The removal method should only remove the rst
-instance of the target value.
 
+You are given a Node class that has a name and an array of optional children Nodes. When put together,
+Nodes form a simple tree-like structure. Implement the breadthFirstSearch method on the Node class,
+which takes in an empty array, traverses the tree using the Breadth-rst Search approach (specically
+navigating the tree from left to right), stores all of the Nodes' names in the input array, and returns it.
 Sample input:
-           10
-          /  \
-         5   15
-        / \	 / \
-       2   5 13 22
-      /        \
-     1          14
-Sample output (after inserting 12):
-           10
-          /  \
-         5    15
-        / \	  / \
-       2   5 13  22
-      /     /  \
-     1     12  14
-Sample output (after removing 10):
-      12
-     / \
-    5  15
+         A
+       / | \
+      B  C  D
+     / \   / \
+    E   F G   H
+       / \ \
+      I  J  K
+Sample output: ["A","B","C","D","E","F","G","H","I","J","K"]
 
 
 
@@ -38,5 +26,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/BST_Construction_Iterative.py) code.
+Check this [Python](../python/Breadth_First_Search.py) code.
 

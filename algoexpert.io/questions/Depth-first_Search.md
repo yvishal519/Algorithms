@@ -1,14 +1,21 @@
-## Balanced Bracket
+## Depth First Search
 
 #### Problem Statement
 
-Write a function that takes in a string made up of brackets `("(","[","{",")","]", and "}")` and other optional characters. The function should return a boolean
-representing whether or not the string is balanced in regards to brackets. A string is said to be balanced if it has as many opening brackets of a given type as it has
-closing brackets of that type and if no bracket is unmatched. Note that a closing bracket cannot match a corresponding opening bracket that comes after it.
-Similarly, brackets cannot overlap each other as in `"[(])"`.
 
-`Sample input:"([])(){}(())()()"
-Sample output: True (it is balanced)`
+You are given a Node class that has a name and an array of optional children Nodes. When put together, Nodes form a simple tree-like structure. Implement the
+depthFirstSearch method on the Node class, which takes in an empty array, traverses the tree using the Depth-rst Search approach (specically navigating the
+tree from left to right), stores all the of the Nodes' names in the input array, and returns it.
+
+Sample input:
+         A
+       / | \
+      B  C  D
+     / \   / \
+    E   F G   H
+       / \ \
+      I  J  K
+Sample output: ["A","B","E","F","I","J","C","D","G","K","H"]
 
 
 
@@ -19,5 +26,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/Balanced_Bracket.py) code.
+Check this [Python](../python/Depth_First_Search.py) code.
 

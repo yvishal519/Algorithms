@@ -1,33 +1,30 @@
-## BST Construction
+## Invert Binary Tree
 
 #### Problem Statement
 
-Write a Binary Search Tree (BST)	class. The class should have a "value" property set to be an integer, as well as "left" and "right" properties, both of which should
-point to either the None (null)	value or to another BST. A node is said to be a BST node if and only if it satises the BST property: its value is strictly greater than
-the values of every node to its left; its value is less than or equal to the values of every node to its right; and both of its children nodes are either BST nodes
-themselves or None (null)	values. The BST class should support insertion, searching, and removal of values. The removal method should only remove the rst
-instance of the target value.
 
+Write a function that takes in a Binary Tree and inverts it. In other words, the
+function should swap every left node in the tree for its corresponding
+(mirrored) right node. Each Binary Tree node has a value stored in a property
+called "value" and two children nodes stored in properties called "left" and
+"right," respectively. Children nodes can either be Binary Tree nodes themselves
+or the None (null) value.
 Sample input:
-           10
-          /  \
-         5   15
-        / \	 / \
-       2   5 13 22
-      /        \
-     1          14
-Sample output (after inserting 12):
-           10
-          /  \
-         5    15
-        / \	  / \
-       2   5 13  22
-      /     /  \
-     1     12  14
-Sample output (after removing 10):
-      12
-     / \
-    5  15
+         1
+        / \
+       2   3
+      / \ / \
+     4  5 6 7
+    / \
+   8   9
+Sample output:
+         1
+        / \
+       3   2
+      / \ / \
+     7  6 5  4
+            / \
+           9   8
 
 
 
@@ -38,5 +35,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/BST_Construction_Iterative.py) code.
+Check this [Python](../python/Invert_Binary_Tree.py) code.
 

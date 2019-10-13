@@ -1,16 +1,15 @@
-## Quick Sort
+## Longest Palindromic Substring
 
 #### Problem Statement
 
-Quick Sort
-Write a function that takes in an array of integers and returns a sorted version of that array. Use the Quick Sort algorithm to sort the array.
 
-
-`Sample input: [8, 5, 2, 9, 5, 6, 3]
-Sample output: [2, 3, 5, 5, 6, 8, 9]`
+Write a function that, given a string, returns its longest palindromic substring. A palindrome is dened as a string that is written the same forward and backward.
+Assume that there will only be one longest palindromic substring.
+Sample input:"abaxyzzyxf"
+Sample output:"xyzzyx"
 
 
 #### Solution
 
-Check this [Python](../python/Quick_Sort.py) code.
+Check this [Python](../python/Longest_Palindromic_Substring.py) code.
 

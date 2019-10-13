@@ -1,14 +1,12 @@
-## Balanced Bracket
+## Find Three Largest Numbers
 
 #### Problem Statement
 
-Write a function that takes in a string made up of brackets `("(","[","{",")","]", and "}")` and other optional characters. The function should return a boolean
-representing whether or not the string is balanced in regards to brackets. A string is said to be balanced if it has as many opening brackets of a given type as it has
-closing brackets of that type and if no bracket is unmatched. Note that a closing bracket cannot match a corresponding opening bracket that comes after it.
-Similarly, brackets cannot overlap each other as in `"[(])"`.
 
-`Sample input:"([])(){}(())()()"
-Sample output: True (it is balanced)`
+Write a function that takes in an array of integers and returns a sorted array of the three largest integers in the input array. Note that the function should return
+duplicate integers if necessary; for example, it should return [10, 10, 12] for an input array of [10, 5, 9, 10, 12].
+Sample input: [141, 1, 17, -7, -17, -27, 18, 541, 8, 7, 7]
+Sample output: [18, 141, 541]
 
 
 
@@ -19,5 +17,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/Balanced_Bracket.py) code.
+Check this [Python](../python/Find_Three_Largest_Number.py) code.
 

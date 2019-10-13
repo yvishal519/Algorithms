@@ -1,14 +1,14 @@
-## Balanced Bracket
+## Binary Search
 
 #### Problem Statement
 
-Write a function that takes in a string made up of brackets `("(","[","{",")","]", and "}")` and other optional characters. The function should return a boolean
-representing whether or not the string is balanced in regards to brackets. A string is said to be balanced if it has as many opening brackets of a given type as it has
-closing brackets of that type and if no bracket is unmatched. Note that a closing bracket cannot match a corresponding opening bracket that comes after it.
-Similarly, brackets cannot overlap each other as in `"[(])"`.
 
-`Sample input:"([])(){}(())()()"
-Sample output: True (it is balanced)`
+Write a function that takes in a sorted array of integers as well as a target integer. The function should use the Binary Search algorithm to nd if the target
+number is contained in the array and should return its index if it is, otherwise -1.
+
+Sample input: [0, 1, 21, 33, 45, 45, 61, 71, 72, 73], 33
+
+Sample output: 3
 
 
 
@@ -19,5 +19,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/Balanced_Bracket.py) code.
+Check this [Python](../python/Binary_Search.py) code.
 

@@ -1,16 +1,17 @@
-## Quick Sort
+## Powerset
 
 #### Problem Statement
 
-Quick Sort
-Write a function that takes in an array of integers and returns a sorted version of that array. Use the Quick Sort algorithm to sort the array.
 
+Write a function that takes in an array of unique integers and returns its powerset. The powerset P(X) of a set X is the set of all subsets of X. For example, the
+powerset of [1,2] is [[], [1], [2], [1,2]]. Note that the sets in the powerset do not need to be in any particular order.
 
-`Sample input: [8, 5, 2, 9, 5, 6, 3]
-Sample output: [2, 3, 5, 5, 6, 8, 9]`
+Sample input: [1, 2, 3]
+
+Sample output: [[], [1], [2], [3], [1, 2], [1, 3], [2, 3], [1, 2, 3]]
 
 
 #### Solution
 
-Check this [Python](../python/Quick_Sort.py) code.
+Check this [Python](../python/Powerset.py) code.
 

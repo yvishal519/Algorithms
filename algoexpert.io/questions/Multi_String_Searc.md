@@ -1,13 +1,15 @@
-## Two Number Sum
+## Multi String Search
 
 #### Problem Statement
 
-Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum. If any two numbers in the input array sum up to the
-target sum, the function should return them in an array, in sorted order. If no two numbers sum up to the target sum, the function should return an empty array.
-Assume that there will be at most one pair of numbers summing up to the target sum.
 
-`Sample input: [3, 5, -4, 8, 11, 1, -1, 6], 10
-Sample output: [-1, 11]`
+Write a function that takes in a "big" string and an array of"small" strings, all of which are smaller in length than the big string. The function should return an array
+of booleans, where each boolean represents whether or not the small string at that index in the array of small strings is contained in the big string. Note that you
+cannot use language-built-in string-matching methods.
+
+Sample input:"this is a big string", ["this","yo","is","a","bigger","string","kappa"]
+
+Sample output: [True, False, True, True, False, True, False]
 
 
 
@@ -18,5 +20,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/Two_Number_Sum.py) code.
+Check this [Python](../python/Multi_String_Search.py) code.
 

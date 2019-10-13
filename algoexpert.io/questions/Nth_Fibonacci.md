@@ -1,14 +1,14 @@
-## Balanced Bracket
+## Nth Fibonacci
 
 #### Problem Statement
 
-Write a function that takes in a string made up of brackets `("(","[","{",")","]", and "}")` and other optional characters. The function should return a boolean
-representing whether or not the string is balanced in regards to brackets. A string is said to be balanced if it has as many opening brackets of a given type as it has
-closing brackets of that type and if no bracket is unmatched. Note that a closing bracket cannot match a corresponding opening bracket that comes after it.
-Similarly, brackets cannot overlap each other as in `"[(])"`.
 
-`Sample input:"([])(){}(())()()"
-Sample output: True (it is balanced)`
+The Fibonacci sequence is dened as follows: the rst number of the sequence is 0, the second number is 1, and the nth number is the sum of the (n - 1)th and (n -
+2)th numbers. Write a function that takes in an integer n and returns the nth Fibonacci number.
+
+Sample input: 6
+
+Sample output: 5 (0, 1, 1, 2, 3, 5)
 
 
 
@@ -19,5 +19,5 @@ We can use a Stack here
 
 #### Solution
 
-Check this [Python](../python/Balanced_Bracket.py) code.
+Check this [Python](../python/Nth_Fibonacci.py) code.
 
