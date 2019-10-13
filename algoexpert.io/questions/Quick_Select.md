@@ -7,6 +7,7 @@ Write a function that takes in an array of distinct integers as well as an integ
 linear time, on average. The array could be sorted, but isn't necessarily so.
 
 Sample input: [8, 5, 2, 9, 7, 6, 3], 3
+
 Sample output: 5
 
 
